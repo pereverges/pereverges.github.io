@@ -1,6 +1,5 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
 </script>
 
 <template>
@@ -9,7 +8,11 @@ import TheWelcome from './components/TheWelcome.vue'
       <HelloWorld msg="CheckInAlert" />
     </div>
   </header>
+  <div class="footer">
+    © {{ new Date().getFullYear() }} Whitecap Associates, LLC
+  </div>
 </template>
+
 
 <style scoped>
 header {
@@ -19,6 +22,17 @@ header {
 .logo {
   display: block;
   margin: 0 auto 2rem;
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #f8f9fa;
+  color: #333;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 @media (min-width: 1024px) {
